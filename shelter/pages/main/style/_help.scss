@@ -1,0 +1,84 @@
+.help {
+  width: 100%;
+  background-color: #ffffff;
+  .help_wrapper {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0px 100px 0px;
+    margin: 0 auto;
+    @media (min-width: 320px) and (max-width: 767px) {
+      padding: 43px 0px 44px 0px;
+    }
+    h3 {
+      font-family: "Georgia";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 130%;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
+      color: #545454;
+      @media (min-width: 320px) and (max-width: 767px) {
+        font-size: 25px;
+      }
+    }
+    .about_icons-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 54px;
+      column-gap: 120px;
+      justify-content: center;
+      padding-top: 60px;
+      @media (min-width: 768px) and (max-width: 1279px) {
+        max-width: 630px;
+        margin: 0 auto;
+        column-gap: 60px;
+      }
+      @media (min-width: 320px) and (max-width: 767px) {
+        column-gap: 30px;
+        row-gap: 30px;
+        max-width: 290px;
+        margin: 0 auto;
+        padding-top: 40px;
+        justify-content: flex-start;
+      }
+      .about_icons-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 113px;
+        @media (min-width: 768px) and (max-width: 1279px) {
+          width: 170px;
+        }
+        @media (min-width: 320px) and (max-width: 767px) {
+          width: 130px;
+          height: 87px;
+        }
+        img {
+          width: 60px;
+          margin: 0 auto;
+          @media (min-width: 320px) and (max-width: 767px) {
+            width: 50px;
+          }
+        }
+        p {
+          font-family: "Georgia";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 115%;
+          align-items: center;
+          text-align: center;
+          letter-spacing: 0.06em;
+          color: #545454;
+          @media (min-width: 320px) and (max-width: 767px) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
