@@ -15,22 +15,28 @@
           <h1>Cozy House</h1>
           <p>Shelter for pets in Boston</p>
         </div>
-        <nav class="header_nav">
-          <ul class="header_nav-items">
-            <li class="header_nav-item">
-              <a href="../main/index.html" class="header_nav-item-a mainLink ">About the shelter</a>
-            </li>
-            <li class="header_nav-item">
-              <a href="#" class="header_nav-item-a active petsLink">Our pets</a>
-            </li>
-            <li class="header_nav-item">
-              <a href="../main/index.html#help" class="header_nav-item-a">Help the shelter</a>
-            </li>
-            <li class="header_nav-item">
-              <a href="#contacts" class="header_nav-item-a">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header_nav-container">
+          <nav class="header_nav">
+            <div class="burger_logo">
+              <h1 class="header_logo-title">Cozy House</h1>
+              <p class="header_logo-subtitle">Shelter for pets in Boston</p>
+            </div>
+            <ul class="header_nav-items">
+              <li class="header_nav-item">
+                <a href="../main/index.html" class="header_nav-item-a mainLink ">About the shelter</a>
+              </li>
+              <li class="header_nav-item">
+                <a href="#" class="header_nav-item-a active petsLink">Our pets</a>
+              </li>
+              <li class="header_nav-item">
+                <a href="../main/index.html#help" class="header_nav-item-a">Help the shelter</a>
+              </li>
+              <li class="header_nav-item">
+                <a href="#contacts" class="header_nav-item-a">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div class="burger-menu">
           <span></span>
         </div>
@@ -42,89 +48,24 @@
           are looking for a house</h3>
         <div class="friends_slider">
           <div class="friends_slider-wrapper">
-            <div class="friends_slider-card">
-              <img
-                src="./../../assets/images/slider/pets-katrine.png"
-                alt="card"
-              />
-              <p>Katrine</p>
-              <button class="friends_slider-card-btn">Learn more</button>
-            </div>
-            <div class="friends_slider-card">
-              <img
-                src="./../../assets/images/slider/pets-jennifer.png"
-                alt="card"
-              />
-              <p>Jennifer</p>
-              <button class="friends_slider-card-btn">Learn more</button>
-            </div>
-            <div class="friends_slider-card">
-              <img
-                src="./../../assets/images/slider/pets-woody.png"
-                alt="card"
-              />
-              <p>Woody</p>
-              <button class="friends_slider-card-btn">Learn more</button>
-            </div>
-            <div class="friends_slider-card">
-              <img
-                src="./../../assets/images/slider/pets-Sofia.png"
-                alt="card"
-              />
-              <p>Sophia</p>
-              <button class="friends_slider-card-btn">Learn more</button>
-            </div>
-            <div class="friends_slider-card">
-              <img
-                src="./../../assets/images/slider/pets-timmy.png"
-                alt="card"
-              />
-              <p>Timmy</p>
-              <button class="friends_slider-card-btn">Learn more</button>
-            </div>
-            <div class="friends_slider-card">
-              <img
-                src="./../../assets/images/slider/pets-charly.png"
-                alt="card"
-              />
-              <p>Charly</p>
-              <button class="friends_slider-card-btn">Learn more</button>
-            </div>
-            <div class="friends_slider-card">
-              <img
-                src="./../../assets/images/slider/pets-scarlet.png"
-                alt="card"
-              />
-              <p>Scarlett</p>
-              <button class="friends_slider-card-btn">Learn more</button>
-            </div>
-            <div class="friends_slider-card">
-              <img
-                src="./../../assets/images/slider/pets-freddie.png"
-                alt="card"
-              />
-              <p>Freddie</p>
-              <button class="friends_slider-card-btn">Learn more</button>
-            </div>
+            <div class="friends_slider-pages"></div>
           </div>
           <div class="friends_slider-pagination">
-            <button class="pagination-sircle " disabled>
-              <div class="arrow_pre-prev disabled"></div>
-            </button>
-            <button class="pagination-sircle" disabled>
-              <div class="arrow_prev disabled"></div>
-            </button>
-            <button class="pagination-sircle active">
-              <div class="number">1</div>
-            </button>
-            <button class="pagination-sircle">
-              <div class="arrow_next"></div>
-            </button>
-            <button class="pagination-sircle">
-              <div class="arrow_next-next"></div>
-            </button>
+            <button class="pagination-sircle btn left double disabled" ><<</button>
+            <button class="pagination-sircle btn left disabled"><</button>
+            <button class="pagination-sircle counter">1</button>
+            <button class="pagination-sircle btn right active">></button>
+            <button class="pagination-sircle btn right double active">>></button>
           </div>
         </div>
+        <div class="modal">
+					<div class="modal_wrapper">
+						<button class="modal_button"></button>
+						<div class="modal_content">
+              
+						</div>
+					</div>
+				</div>
       </section>
     </main>
     <footer class="footer" id="contacts">
@@ -151,6 +92,6 @@
           <img src="./../../assets/images/footer-puppy.png" alt="footer">
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>

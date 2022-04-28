@@ -15,22 +15,28 @@
           <h1>Cozy House</h1>
           <p>Shelter for pets in Boston</p>
         </div>
-        <nav class="header_nav">
-          <ul class="header_nav-items">
-            <li class="header_nav-item">
-              <a href="#" class="header_nav-item-a active">About the shelter</a>
-            </li>
-            <li class="header_nav-item active">
-              <a href="../pets/index.html" class="header_nav-item-a petsLink ">Our pets</a>
-            </li>
-            <li class="header_nav-item">
-              <a href="#help" class="header_nav-item-a">Help the shelter</a>
-            </li>
-            <li class="header_nav-item">
-              <a href="#contacts" class="header_nav-item-a">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header_nav-container">
+          <nav class="header_nav">
+            <div class="burger_logo">
+              <h1 class="header_logo-title">Cozy House</h1>
+              <p class="header_logo-subtitle">Shelter for pets in Boston</p>
+            </div>
+            <ul class="header_nav-items">
+              <li class="header_nav-item">
+                <a href="#" class="header_nav-item-a active">About the shelter</a>
+              </li>
+              <li class="header_nav-item active">
+                <a href="../pets/index.html" class="header_nav-item-a petsLink ">Our pets</a>
+              </li>
+              <li class="header_nav-item">
+                <a href="#help" class="header_nav-item-a">Help the shelter</a>
+              </li>
+              <li class="header_nav-item">
+                <a href="#contacts" class="header_nav-item-a">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div class="burger-menu">
           <span></span>
         </div>
@@ -82,29 +88,8 @@
           <div class="friends_slider" >
             <button class="friends_slider-btn left"></button>
             <div class="friends_slider-wrapper">
-              <div class="friends_slider-card">
-                <img
-                  src="./../../assets/images/slider/pets-katrine.png"
-                  alt="card"
-                />
-                <p>Katrine</p>
-                <button class="friends_slider-card-btn">Learn more</button>
-              </div>
-              <div class="friends_slider-card">
-                <img
-                  src="./../../assets/images/slider/pets-jennifer.png"
-                  alt="card"
-                />
-                <p>Jennifer</p>
-                <button class="friends_slider-card-btn">Learn more</button>
-              </div>
-              <div class="friends_slider-card">
-                <img
-                  src="./../../assets/images/slider/pets-woody.png"
-                  alt="card"
-                />
-                <p>Woody</p>
-                <button class="friends_slider-card-btn">Learn more</button>
+              <div class="carousel">
+               
               </div>
             </div>
             <button class="friends_slider-btn right"></button>
@@ -202,6 +187,14 @@
           <img src="./../../assets/images/footer-puppy.png" alt="footer">
         </div>
     </footer>
-    <script src="script.js"></script>
+    <div class="modal">
+      <div class="modal_wrapper">
+        <button class="modal_button"></button>
+        <div class="modal_content">
+          
+        </div>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
   </body>
 </html>

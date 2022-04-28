@@ -5,6 +5,7 @@
 @import "./style/_help.scss";
 @import "./style/_addition.scss";
 @import "./style/_footer.scss";
+@import "./style/_modal.scss";
 
 @font-face {
   font-family: "Georgia";
@@ -25,6 +26,13 @@ body {
   width: 100%;
   margin: 0 auto;
   position: relative;
+  &.lock {
+    overflow: hidden;
+  }
+  &.lock_modal {
+    overflow: hidden;
+    height: 100%;
+  }
 }
 .main {
   width: 100%;
