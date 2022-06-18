@@ -1,0 +1,327 @@
+.friends {
+  width: 100%;
+  background: #f6f6f6;
+  .friends_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      padding-top: 43px;
+      padding-bottom: 40px;
+    }
+    h3 {
+      max-width: 400px;
+      font-family: "Georgia";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 130%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
+      color: #545454;
+      @media (min-width: 320px) and (max-width: 767px) {
+        font-size: 25px;
+      }
+    }
+    .friends_slider {
+      display: flex;
+      margin-bottom: 30px;
+
+      @media (min-width: 320px) and (max-width: 767px) {
+        flex-direction: column;
+        margin-bottom: 42px;
+      }
+      @media (min-width: 768px) and (max-width: 1279px) {
+        max-width: 708px;
+        margin: 0 auto;
+        width: 100%;
+        justify-content: space-between;
+      }
+      .friends_slider-btn {
+        width: 52px;
+        height: 52px;
+        border: 1px solid #f1cdb3;
+        box-sizing: border-box;
+        border-radius: 100px;
+        margin-top: 250px;
+        background-color: inherit;
+        &:hover {
+          background-color: #fddcc4;
+        }
+      }
+      .left {
+        background-image: url(./../../assets/icons/button_arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        @media (min-width: 320px) and (max-width: 767px) {
+          order: 2;
+          margin-top: -20px;
+          margin-left: 18%;
+        }
+        &:disabled {
+          background-image: url(./../../assets/icons/button_arrow2.svg);
+          border: 2px solid #cdcdcd;
+        }
+      }
+      .right {
+        background-position: center;
+        background-image: url(./../../assets/icons/button_arrow.svg);
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        @media (min-width: 320px) and (max-width: 767px) {
+          order: 2;
+          margin-top: -52px;
+          margin-left: 64%;
+        }
+        &:disabled {
+          background-image: url(./../../assets/icons/button_arrow2.svg);
+          border: 2px solid #cdcdcd;
+          background-color: inherit;
+        }
+      }
+      .friends_slider-wrapper {
+        overflow: hidden;
+        width: 1090px;
+        height: 435px;
+        margin: 60px 0;
+        @media (min-width: 768px) and (max-width: 1279px) {
+          padding: 0px 12px 0px 12px;
+          max-width: 604px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          column-gap: 0;
+        }
+        @media (min-width: 320px) and (max-width: 767px) {
+          width: 290px;
+          margin: 40px 0;
+        }
+      }
+    }
+  }
+  .friends_btn {
+    width: 261px;
+    height: 52px;
+    background: #f1cdb3;
+    border-radius: 100px;
+    border: none;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    &:hover {
+      background: #fddcc4;
+    }
+  }
+}
+.carousel {
+  position: relative;
+  display: flex;
+  left: -1090px;
+  -webkit-transition: 1s left;
+  transition: 1s left;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    left: -600px;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    left: -290px;
+  }
+}
+
+.carousel_cards {
+  width: 990px;
+  height: 435px;
+  display: flex;
+  justify-content: center;
+  column-gap: 90px;
+  margin: 0 50px;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    column-gap: 40px;
+    padding: 0 10px;
+    width: 494px;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    column-gap: 40px;
+    padding: 0 10px;
+    margin: 0;
+  }
+}
+.carousel_cards-left {
+}
+.carousel_cards-current {
+}
+.carousel_cards-right {
+}
+.friends_slider-card {
+  min-width: 270px;
+  height: 435px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fafafa;
+  border-radius: 9px;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 0px;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    margin-right: 0px;
+  }
+  cursor: pointer;
+  &:hover {
+    background: #ffffff;
+    transform: scale(1.1);
+  }
+  &:hover .friends_slider-card-btn {
+    background: #fddcc4;
+  }
+  &:nth-child(2) {
+    @media (min-width: 320px) and (max-width: 767px) {
+      display: none;
+    }
+  }
+  &:nth-child(3) {
+    margin-right: 0;
+    @media (min-width: 768px) and (max-width: 1279px) {
+      display: none;
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+      display: none;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  p {
+    margin: 30px 0;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+  }
+  .friends_slider-card-btn {
+    width: 187px;
+    height: 52px;
+    border: 2px solid #f1cdb3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    margin-bottom: 30px;
+    background-color: inherit;
+    &:hover {
+      background: #fddcc4;
+    }
+  }
+}
+@keyframes move-right {
+  from {
+    left: -1090;
+  }
+  to {
+    left: -2180px;
+  }
+}
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1s;
+}
+@keyframes move-left {
+  from {
+    left: -1090;
+  }
+  to {
+    left: 0px;
+  }
+}
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1s;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  @-webkit-keyframes move-right {
+    from {
+      left: -600px;
+    }
+    to {
+      left: -1200px;
+    }
+  }
+  @keyframes move-right {
+    from {
+      left: -600px;
+    }
+    to {
+      left: -1200px;
+    }
+  }
+  @-webkit-keyframes move-left {
+    from {
+      left: -600px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+  @keyframes move-left {
+    from {
+      left: -600px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+}
+@media (min-width: 0) and (max-width: 767px) {
+  @-webkit-keyframes move-right {
+    from {
+      left: -290px;
+    }
+    to {
+      left: -580px;
+    }
+  }
+  @keyframes move-right {
+    from {
+      left: -290px;
+    }
+    to {
+      left: -580px;
+    }
+  }
+  @-webkit-keyframes move-left {
+    from {
+      left: -290px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+  @keyframes move-left {
+    from {
+      left: -290px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+}

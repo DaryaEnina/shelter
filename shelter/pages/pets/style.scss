@@ -1,0 +1,36 @@
+@import "./style/_header.scss";
+@import "./style/_friends.scss";
+@import "./style/_footer.scss";
+@import "./style/_modal.scss";
+
+@font-face {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("./../../assets/fonts/georgia.ttf");
+}
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("./../../assets/fonts/arialmt.ttf");
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+  background: #f6f6f6;
+  &.lock {
+    overflow: hidden;
+  }
+  &.lock_modal {
+    overflow: hidden;
+    height: 100%;
+  }
+}
+.main {
+  width: 100%;
+  padding-top: 140px;
+}
